@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EntityLink — Corporate Entity Management Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <img src="entitylink_logo2.svg" alt="EntityLink" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="#features" data-en="Features" data-he="תכונות">Features</a>
+                <a href="#tree" data-en="Org Chart" data-he="עץ ארגוני">Org Chart</a>
+                <a href="#management" data-en="Management" data-he="ניהול">Management</a>
+                <a href="#compliance" data-en="Compliance" data-he="ציות">Compliance</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle Language">
+                    <span class="lang-label" data-en="עב" data-he="EN">עב</span>
+                </button>
+                <a href="#contact" class="nav-cta" data-en="Get Started" data-he="התחילו עכשיו">Get Started</a>
+            </div>
+            <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal">
+                <span class="title-line" data-en="Manage Every Entity." data-he="נהלו כל ישות.">Manage Every Entity.</span>
+                <span class="title-line title-accent" data-en="Across Every Border." data-he="מעבר לכל גבול.">Across Every Border.</span>
+            </h1>
+            <p class="hero-subtitle reveal" data-en="A unified platform to centralize company data, compliance standards, financial records, and corporate governance — across your entire global portfolio." data-he="פלטפורמה אחודה לריכוז נתוני חברות, תקני ציות, רשומות פיננסיות וממשל תאגידי — על פני כלל הפורטפוליו הגלובלי שלכם.">
+                A unified platform to centralize company data, compliance standards, financial records, and corporate governance — across your entire global portfolio.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#contact" class="btn btn-primary" data-en="Request a Demo" data-he="בקשו הדגמה">Request a Demo</a>
+                <a href="#features" class="btn btn-secondary" data-en="Explore Features" data-he="גלו תכונות">Explore Features</a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label" data-en="Legal Entities Managed" data-he="ישויות משפטיות מנוהלות">Legal Entities Managed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label" data-en="Countries Covered" data-he="מדינות מכוסות">Countries Covered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label" data-en="Compliance Tracking" data-he="מעקב ציות">Compliance Tracking</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual reveal">
+            <div class="hero-screen">
+                <div class="screen-header">
+                    <div class="screen-dots"><span></span><span></span><span></span></div>
+                    <div class="screen-title">EntityLink — Legal Entities</div>
+                </div>
+                <div class="screen-content">
+                    <div class="screen-sidebar">
+                        <div class="sb-item active"></div>
+                        <div class="sb-item"></div>
+                        <div class="sb-item"></div>
+                        <div class="sb-item"></div>
+                        <div class="sb-item"></div>
+                    </div>
+                    <div class="screen-main">
+                        <div class="screen-topbar"></div>
+                        <div class="screen-org">
+                            <!-- Level 0: Root -->
+                            <div class="sorg-level">
+                                <div class="sorg-node root"></div>
+                            </div>
+                            <div class="sorg-connector">
+                                <div class="sorg-vline"></div>
+                                <div class="sorg-hline"></div>
+                            </div>
+                            <!-- Level 1: 3 children -->
+                            <div class="sorg-level">
+                                <div class="sorg-node"></div>
+                                <div class="sorg-node"></div>
+                                <div class="sorg-node"></div>
+                            </div>
+                            <div class="sorg-connector triple">
+                                <div class="sorg-vline"></div>
+                                <div class="sorg-vline"></div>
+                                <div class="sorg-vline"></div>
+                            </div>
+                            <!-- Level 2: 5 leaves -->
+                            <div class="sorg-level">
+                                <div class="sorg-node small"></div>
+                                <div class="sorg-node small"></div>
+                                <div class="sorg-node small"></div>
+                                <div class="sorg-node small"></div>
+                                <div class="sorg-node small"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos / Trust -->
+    <section class="trust-bar">
+        <div class="container">
+            <p class="trust-label reveal" data-en="Trusted for global corporate governance" data-he="מהימן לממשל תאגידי גלובלי">Trusted for global corporate governance</p>
+            <div class="trust-regions reveal">
+                <div class="region-pill"><span class="region-dot emea"></span> EMEA</div>
+                <div class="region-pill"><span class="region-dot apac"></span> APAC</div>
+                <div class="region-pill"><span class="region-dot cala"></span> CALA</div>
+                <div class="region-pill"><span class="region-dot na"></span> NA</div>
+                <div class="region-pill"><span class="region-dot israel"></span> Israel</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-en="Platform Capabilities" data-he="יכולות הפלטפורמה">Platform Capabilities</span>
+                <h2 class="section-title" data-en="Everything you need to manage corporate entities at scale." data-he="כל מה שצריך לניהול ישויות תאגידיות בקנה מידה גדול.">Everything you need to manage<br>corporate entities at scale.</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal" data-delay="0">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="10" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="18" r="6" stroke="currentColor" stroke-width="2"/><path d="M12 38c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 data-en="Entity Management" data-he="ניהול ישויות">Entity Management</h3>
+                    <p data-en="Centralize all legal entities — group companies, branches, and external service providers — in a single unified system with full lifecycle tracking." data-he="רכזו את כל הישויות המשפטיות — חברות קבוצה, סניפים וספקי שירות חיצוניים — במערכת אחודה אחת עם מעקב מלא אחר מחזור החיים.">Centralize all legal entities — group companies, branches, and external service providers — in a single unified system with full lifecycle tracking.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="100">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 6v36M6 24h36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="18" y="2" width="12" height="8" rx="2" stroke="currentColor" stroke-width="2"/><rect x="2" y="20" width="12" height="8" rx="2" stroke="currentColor" stroke-width="2"/><rect x="34" y="20" width="12" height="8" rx="2" stroke="currentColor" stroke-width="2"/><rect x="10" y="38" width="12" height="8" rx="2" stroke="currentColor" stroke-width="2"/><rect x="26" y="38" width="12" height="8" rx="2" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 data-en="Org Chart & Tree View" data-he="עץ ארגוני ותצוגת עץ">Org Chart & Tree View</h3>
+                    <p data-en="Visualize your entire corporate hierarchy with interactive org charts. See ownership structures, subsidiaries, shareholders, and holdings at a glance." data-he="הציגו את כל ההיררכיה התאגידית שלכם באמצעות תרשימי ארגון אינטראקטיביים. צפו במבני בעלות, חברות בנות, בעלי מניות ואחזקות במבט אחד.">Visualize your entire corporate hierarchy with interactive org charts. See ownership structures, subsidiaries, shareholders, and holdings at a glance.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="200">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M8 8h32v32H8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 24l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 16h32" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 data-en="Compliance Tracking" data-he="מעקב ציות">Compliance Tracking</h3>
+                    <p data-en="Stay ahead of regulatory requirements with automated compliance workflows, deadline tracking, risk assessment, and country-specific policy management." data-he="הקדימו דרישות רגולטוריות עם תהליכי ציות אוטומטיים, מעקב מועדים, הערכת סיכונים וניהול מדיניות ספציפית למדינה.">Stay ahead of regulatory requirements with automated compliance workflows, deadline tracking, risk assessment, and country-specific policy management.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="300">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M6 38l10-14 8 8 8-12 10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="38" cy="12" r="6" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 data-en="Reports & Analytics" data-he="דוחות ואנליטיקה">Reports & Analytics</h3>
+                    <p data-en="Generate detailed reports on appointments, addresses, entities, and compliance. Export to PDF or Excel, share via deep links, and track KPIs." data-he="הפיקו דוחות מפורטים על מינויים, כתובות, ישויות וציות. ייצוא ל-PDF או Excel, שיתוף דרך קישורים ישירים ומעקב אחר KPIs.">Generate detailed reports on appointments, addresses, entities, and compliance. Export to PDF or Excel, share via deep links, and track KPIs.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="400">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 6c5 6 8 12 8 18s-3 12-8 18" stroke="currentColor" stroke-width="2"/><path d="M24 6c-5 6-8 12-8 18s3 12 8 18" stroke="currentColor" stroke-width="2"/><path d="M8 18h32M8 30h32" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 data-en="Global Map View" data-he="תצוגת מפה גלובלית">Global Map View</h3>
+                    <p data-en="See all your entities plotted on an interactive global map. Filter by region, status, or type. Drill down to entity details with a single click." data-he="ראו את כל הישויות שלכם על מפה גלובלית אינטראקטיבית. סננו לפי אזור, סטטוס או סוג. הגיעו לפרטי הישות בלחיצה אחת.">See all your entities plotted on an interactive global map. Filter by region, status, or type. Drill down to entity details with a single click.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="500">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M10 8h28v32l-14-8-14 8V8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M18 18h12M18 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 data-en="Document Archive" data-he="ארכיון מסמכים">Document Archive</h3>
+                    <p data-en="Organize corporate documents in a structured tree hierarchy. Manage certificates, board minutes, compliance filings, and contracts with full version control." data-he="ארגנו מסמכים תאגידיים בהיררכיית עץ מובנית. נהלו תעודות, פרוטוקולי דירקטוריון, הגשות ציות וחוזים עם בקרת גרסאות מלאה.">Organize corporate documents in a structured tree hierarchy. Manage certificates, board minutes, compliance filings, and contracts with full version control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Org Chart / Tree Showcase -->
+    <section class="tree-section" id="tree">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-en="Interactive Visualization" data-he="הדמיה אינטראקטיבית">Interactive Visualization</span>
+                <h2 class="section-title" data-en="See your entire corporate structure come to life." data-he="ראו את כל המבנה התאגידי שלכם מתעורר לחיים.">See your entire corporate<br>structure come to life.</h2>
+                <p class="section-desc" data-en="Navigate complex ownership hierarchies with our interactive org chart. Color-coded by region, filterable by holdings, and exportable to PDF." data-he="נווטו בהיררכיות בעלות מורכבות עם תרשים הארגון האינטראקטיבי שלנו. מקודד צבע לפי אזור, ניתן לסינון לפי אחזקות ולייצוא ל-PDF.">Navigate complex ownership hierarchies with our interactive org chart. Color-coded by region, filterable by holdings, and exportable to PDF.</p>
+            </div>
+        </div>
+        <!-- Org Chart showcase — dark premium canvas -->
+        <div class="org-showcase reveal">
+            <div class="org-chart active" id="orgChartView">
+                <div class="oc-canvas">
+                    <!-- Ambient glow blobs -->
+                    <div class="oc-glow oc-glow-1"></div>
+                    <div class="oc-glow oc-glow-2"></div>
+                    <div class="oc-glow oc-glow-3"></div>
+
+                    <div class="org-chart-inner">
+                        <svg class="org-lines" aria-hidden="true"></svg>
+
+                        <!-- Level 0 — Root -->
+                        <div class="org-level level-0">
+                            <div class="org-node root-node" data-region="global">
+                                <div class="node-region-bar"></div>
+                                <div class="node-body">
+                                    <svg class="node-icon" viewBox="0 0 20 20" width="18" height="18"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M2 10h16M10 2c-2.5 3-2.5 13 0 16M10 2c2.5 3 2.5 13 0 16" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+                                    <div class="node-text">
+                                        <strong class="node-name">Northvale Holdings Ltd</strong>
+                                        <span class="node-meta">Guernsey &bull; 100%</span>
+                                    </div>
+                                    <span class="node-badge root-badge">Parent</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Level 1 -->
+                        <div class="org-level level-1">
+                            <div class="org-node" data-region="na">
+                                <div class="node-region-bar na"></div>
+                                <div class="node-body">
+                                    <div class="node-text"><strong class="node-name">Meridian Corp.</strong><span class="node-meta">USA &bull; 100%</span></div>
+                                    <span class="node-badge na-badge">NA</span>
+                                </div>
+                            </div>
+                            <div class="org-node" data-region="emea">
+                                <div class="node-region-bar emea"></div>
+                                <div class="node-body">
+                                    <div class="node-text"><strong class="node-name">Crestfield UK Ltd</strong><span class="node-meta">UK &bull; 100%</span></div>
+                                    <span class="node-badge emea-badge">EMEA</span>
+                                </div>
+                            </div>
+                            <div class="org-node" data-region="israel">
+                                <div class="node-region-bar israel"></div>
+                                <div class="node-body">
+                                    <div class="node-text"><strong class="node-name">Northvale Israel Ltd</strong><span class="node-meta">Israel &bull; 100%</span></div>
+                                    <span class="node-badge israel-badge">IL</span>
+                                </div>
+                            </div>
+                            <div class="org-node" data-region="apac">
+                                <div class="node-region-bar apac"></div>
+                                <div class="node-body">
+                                    <div class="node-text"><strong class="node-name">Halcyon Asia Pte</strong><span class="node-meta">Singapore &bull; 85%</span></div>
+                                    <span class="node-badge apac-badge">APAC</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Level 2 -->
+                        <div class="org-level level-2">
+                            <div class="org-node small" data-region="na"><div class="node-region-bar na"></div><div class="node-body"><div class="node-text"><strong class="node-name">Meridian Dev Inc.</strong><span class="node-meta">USA &bull; 100%</span></div></div></div>
+                            <div class="org-node small" data-region="cala"><div class="node-region-bar cala"></div><div class="node-body"><div class="node-text"><strong class="node-name">Solaris Brasil SA</strong><span class="node-meta">Brazil &bull; 75%</span></div></div></div>
+                            <div class="org-node small" data-region="emea"><div class="node-region-bar emea"></div><div class="node-body"><div class="node-text"><strong class="node-name">Crestfield GmbH</strong><span class="node-meta">Germany &bull; 100%</span></div></div></div>
+                            <div class="org-node small" data-region="emea"><div class="node-region-bar emea"></div><div class="node-body"><div class="node-text"><strong class="node-name">Crestfield France</strong><span class="node-meta">France &bull; 100%</span></div></div></div>
+                            <div class="org-node small" data-region="israel"><div class="node-region-bar israel"></div><div class="node-body"><div class="node-text"><strong class="node-name">Vered Tech Ltd</strong><span class="node-meta">Israel &bull; 50%</span></div></div></div>
+                            <div class="org-node small" data-region="apac"><div class="node-region-bar apac"></div><div class="node-body"><div class="node-text"><strong class="node-name">Halcyon India Pvt</strong><span class="node-meta">India &bull; 100%</span></div></div></div>
+                            <div class="org-node small" data-region="apac"><div class="node-region-bar apac"></div><div class="node-body"><div class="node-text"><strong class="node-name">Halcyon Australia</strong><span class="node-meta">Australia &bull; 90%</span></div></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Legend -->
+                <div class="org-legend">
+                    <span class="legend-title" data-en="Regions:" data-he="אזורים:">Regions:</span>
+                    <div class="legend-item"><span class="legend-dot na"></span>NA</div>
+                    <div class="legend-item"><span class="legend-dot emea"></span>EMEA</div>
+                    <div class="legend-item"><span class="legend-dot apac"></span>APAC</div>
+                    <div class="legend-item"><span class="legend-dot cala"></span>CALA</div>
+                    <div class="legend-item"><span class="legend-dot israel"></span>Israel</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Archive Section -->
+    <section class="archive-section" id="archive">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-en="Document Management" data-he="ניהול מסמכים">Document Management</span>
+                <h2 class="section-title" data-en="Every document, organized and accessible." data-he="כל מסמך, מאורגן ונגיש.">Every document,<br>organized and accessible.</h2>
+                <p class="section-desc" data-en="A centralized document archive with folder hierarchies, category filters, date-based search, and full audit trails for corporate records." data-he="ארכיון מסמכים מרכזי עם היררכיית תיקיות, מסנני קטגוריות, חיפוש לפי תאריך ומעקב ביקורת מלא לרשומות תאגידיות.">A centralized document archive with folder hierarchies, category filters, date-based search, and full audit trails for corporate records.</p>
+            </div>
+        </div>
+        <div class="doc-showcase reveal">
+            <div class="archive-tree active" id="archiveTreeView">
+                <!-- Filter bar -->
+                <div class="archive-topbar">
+                    <div class="archive-topbar-filters">
+                        <span class="oc-filter-pill active">All Categories</span>
+                        <span class="oc-filter-pill">Regular</span>
+                        <span class="oc-filter-pill">Financial</span>
+                        <span class="oc-filter-pill">Law Firm</span>
+                        <span class="oc-filter-pill">Banking</span>
+                        <span class="oc-filter-pill">Tax</span>
+                    </div>
+                </div>
+                <div class="archive-body">
+                    <!-- LEFT: Tree panel -->
+                    <div class="archive-panel">
+                        <div class="archive-tree-nav">
+                            <div class="at-group expanded">
+                                <div class="at-row at-parent" data-level="0">
+                                    <span class="at-toggle"><svg viewBox="0 0 16 16" width="12" height="12"><path d="M5 3l6 5-6 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                                    <svg class="at-folder" viewBox="0 0 20 20" width="16" height="16"><path d="M2 5h5l2 2h8v9H2V5z" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/></svg>
+                                    <span class="at-name"><strong>Main Folder</strong></span>
+                                    <span class="at-count">12</span>
+                                </div>
+                                <div class="at-children">
+                                    <div class="at-branch">
+                                        <div class="at-row" data-level="1">
+                                            <svg class="at-folder" viewBox="0 0 20 20" width="16" height="16"><path d="M2 5h5l2 2h8v9H2V5z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.2"/></svg>
+                                            <span class="at-name">1.1 Basic Data</span>
+                                            <span class="at-count">4</span>
+                                        </div>
+                                    </div>
+                                    <div class="at-branch">
+                                        <div class="at-row" data-level="1">
+                                            <svg class="at-folder" viewBox="0 0 20 20" width="16" height="16"><path d="M2 5h5l2 2h8v9H2V5z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.2"/></svg>
+                                            <span class="at-name">1.2 General Meetings</span>
+                                            <span class="at-count">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="at-branch">
+                                        <div class="at-row" data-level="1">
+                                            <svg class="at-folder" viewBox="0 0 20 20" width="16" height="16"><path d="M2 5h5l2 2h8v9H2V5z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.2"/></svg>
+                                            <span class="at-name">1.3 Articles of Association</span>
+                                            <span class="at-count">5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="at-group">
+                                <div class="at-row at-parent" data-level="0">
+                                    <span class="at-toggle collapsed"><svg viewBox="0 0 16 16" width="12" height="12"><path d="M5 3l6 5-6 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                                    <svg class="at-folder" viewBox="0 0 20 20" width="16" height="16"><path d="M2 5h5l2 2h8v9H2V5z" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/></svg>
+                                    <span class="at-name"><strong>Board &amp; Corporate</strong></span>
+                                    <span class="at-count">8</span>
+                                </div>
+                            </div>
+                            <div class="at-group">
+                                <div class="at-row at-parent" data-level="0">
+                                    <span class="at-toggle collapsed"><svg viewBox="0 0 16 16" width="12" height="12"><path d="M5 3l6 5-6 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                                    <svg class="at-folder" viewBox="0 0 20 20" width="16" height="16"><path d="M2 5h5l2 2h8v9H2V5z" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/></svg>
+                                    <span class="at-name"><strong>Regulatory</strong></span>
+                                    <span class="at-count">6</span>
+                                </div>
+                            </div>
+                            <div class="at-group">
+                                <div class="at-row at-parent" data-level="0">
+                                    <span class="at-toggle collapsed"><svg viewBox="0 0 16 16" width="12" height="12"><path d="M5 3l6 5-6 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                                    <svg class="at-folder" viewBox="0 0 20 20" width="16" height="16"><path d="M2 5h5l2 2h8v9H2V5z" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/></svg>
+                                    <span class="at-name"><strong>Vendors</strong></span>
+                                    <span class="at-count">3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT: Detail table -->
+                    <div class="archive-detail">
+                        <div class="archive-detail-header">
+                            <h4>Main Folder</h4>
+                            <button class="archive-create-btn"><svg viewBox="0 0 16 16" width="14" height="14" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v6M5 8h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> <span data-en="Create" data-he="צור">Create</span></button>
+                        </div>
+                        <div class="archive-table">
+                            <div class="archive-table-head">
+                                <span data-en="Date" data-he="תאריך">Date</span>
+                                <span data-en="Folder Name" data-he="שם תיקייה">Folder Name</span>
+                                <span data-en="Name" data-he="שם">Name</span>
+                                <span data-en="Category" data-he="קטגוריה">Category</span>
+                            </div>
+                            <div class="archive-table-row">
+                                <span>12/03/2025</span>
+                                <span>1.1 Basic Data</span>
+                                <span>Certificate of Incorporation</span>
+                                <span class="cat-pill banking">Banking</span>
+                            </div>
+                            <div class="archive-table-row">
+                                <span>11/15/2025</span>
+                                <span>1.2 General Meetings</span>
+                                <span>Board Resolution Q4</span>
+                                <span class="cat-pill financial">Financial</span>
+                            </div>
+                            <div class="archive-table-row">
+                                <span>10/28/2025</span>
+                                <span>1.1 Basic Data</span>
+                                <span>Business License</span>
+                                <span class="cat-pill tax">Tax</span>
+                            </div>
+                            <div class="archive-table-row">
+                                <span>09/14/2025</span>
+                                <span>1.3 Articles</span>
+                                <span>Amended Articles</span>
+                                <span class="cat-pill lawfirm">Law Firm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entity Management Section -->
+    <section class="management" id="management">
+        <div class="container">
+            <div class="mgmt-layout">
+                <div class="mgmt-content reveal">
+                    <span class="section-tag" data-en="Entity Lifecycle" data-he="מחזור חיי ישות">Entity Lifecycle</span>
+                    <h2 class="section-title" data-en="Complete control over every entity." data-he="שליטה מלאה על כל ישות.">Complete control<br>over every entity.</h2>
+                    <div class="mgmt-features">
+                        <div class="mgmt-feature">
+                            <div class="mgmt-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" width="24" height="24"><rect x="3" y="3" width="18" height="18" rx="4" stroke="#E8612D" stroke-width="1.5"/><path d="M8 12h8M12 8v8" stroke="#E8612D" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <div>
+                                <strong data-en="Group Companies & Branches" data-he="חברות קבוצה וסניפים">Group Companies & Branches</strong>
+                                <p data-en="Full profiles with registration, tax, incorporation dates, SAP integration, and status lifecycle management." data-he="פרופילים מלאים עם רישום, מס, תאריכי התאגדות, אינטגרציית SAP וניהול מחזור חיי סטטוס.">Full profiles with registration, tax, incorporation dates, SAP integration, and status lifecycle management.</p>
+                            </div>
+                        </div>
+                        <div class="mgmt-feature">
+                            <div class="mgmt-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" width="24" height="24"><circle cx="12" cy="8" r="4" stroke="#E8612D" stroke-width="1.5"/><path d="M4 20c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="#E8612D" stroke-width="1.5"/></svg>
+                            </div>
+                            <div>
+                                <strong data-en="Directors, Officers & Signatories" data-he="דירקטורים, נושאי משרה ומורשי חתימה">Directors, Officers & Signatories</strong>
+                                <p data-en="Track all appointments, mandates, signature scopes, renewal dates, and compliance questionnaires for key personnel." data-he="עקבו אחר כל המינויים, המנדטים, היקפי החתימה, תאריכי חידוש ושאלוני ציות לאנשי מפתח.">Track all appointments, mandates, signature scopes, renewal dates, and compliance questionnaires for key personnel.</p>
+                            </div>
+                        </div>
+                        <div class="mgmt-feature">
+                            <div class="mgmt-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" width="24" height="24"><path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" stroke="#E8612D" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 12v10M12 12L3 7M12 12l9-5" stroke="#E8612D" stroke-width="1.5"/></svg>
+                            </div>
+                            <div>
+                                <strong data-en="Shareholdings & Transactions" data-he="אחזקות ועסקאות">Shareholdings & Transactions</strong>
+                                <p data-en="Manage share classes, capital models, ownership transactions, trustees, and voting rights calculations." data-he="נהלו סוגי מניות, מודלים הוניים, עסקאות בעלות, נאמנים וחישובי זכויות הצבעה.">Manage share classes, capital models, ownership transactions, trustees, and voting rights calculations.</p>
+                            </div>
+                        </div>
+                        <div class="mgmt-feature">
+                            <div class="mgmt-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" width="24" height="24"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#E8612D" stroke-width="1.5"/><path d="M3 9h18M7 13h4M7 16h2" stroke="#E8612D" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <div>
+                                <strong data-en="External Companies & Services" data-he="חברות חיצוניות ושירותים">External Companies & Services</strong>
+                                <p data-en="Track law firms, auditors, tax advisors, and other service providers with cost tracking and contract management." data-he="עקבו אחר משרדי עורכי דין, רואי חשבון, יועצי מס וספקי שירות נוספים עם מעקב עלויות וניהול חוזים.">Track law firms, auditors, tax advisors, and other service providers with cost tracking and contract management.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mgmt-visual reveal">
+                    <div class="factsheet-preview">
+                        <div class="fp-sidebar">
+                            <div class="fp-entity-info">
+                                <div class="fp-badge">
+                                    <svg viewBox="0 0 20 20" width="14" height="14"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M10 2a8 8 0 100 16" fill="currentColor" opacity="0.1"/></svg>
+                                    Legal Entities
+                                </div>
+                                <span class="fp-status"><span class="status-dot active"></span> Active</span>
+                                <strong class="fp-name">Sqlink Ltd</strong>
+                                <div class="fp-details">
+                                    <span>Entity Type: <b>Group Company</b></span>
+                                    <span>#SAP: <b>-</b></span>
+                                    <span>Country: <b>IL</b></span>
+                                    <span>Reg. Number: <b>1122584</b></span>
+                                </div>
+                            </div>
+                            <div class="fp-nav">
+                                <div class="fp-nav-item active">Overview</div>
+                                <div class="fp-nav-item">Addresses</div>
+                                <div class="fp-nav-item">Appointments</div>
+                                <div class="fp-nav-item">Subsidiaries</div>
+                                <div class="fp-nav-item">Shareholders</div>
+                                <div class="fp-nav-item highlight">Archive</div>
+                                <div class="fp-nav-item">Compliance</div>
+                            </div>
+                        </div>
+                        <div class="fp-main">
+                            <div class="fp-header">
+                                <div class="fp-breadcrumb">Home / Legal Entities / Sqlink / Overview</div>
+                                <h3>Overview</h3>
+                            </div>
+                            <div class="fp-grid">
+                                <div class="fp-field"><label>Entity's Form</label><span>Corporation</span></div>
+                                <div class="fp-field"><label>Main Shareholder</label><span>Got Friends (50%)</span></div>
+                                <div class="fp-field"><label>Date of Incorporation</label><span>Sep 3, 2024</span></div>
+                                <div class="fp-field"><label>Tax ID</label><span>8544955</span></div>
+                            </div>
+                            <div class="fp-section-title">Addresses</div>
+                            <div class="fp-address">
+                                <span class="fp-address-badge">Registered Address</span>
+                                <span>Derech Menachem Begin 11, Ramat Gan, Israel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Section -->
+    <section class="compliance" id="compliance">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-en="Regulatory Compliance" data-he="ציות רגולטורי">Regulatory Compliance</span>
+                <h2 class="section-title" data-en="Stay compliant. Stay confident." data-he="שמרו על ציות. שמרו על ביטחון.">Stay compliant.<br>Stay confident.</h2>
+            </div>
+            <div class="compliance-grid">
+                <div class="compliance-card reveal" data-delay="0">
+                    <div class="cc-icon">
+                        <div class="cc-ring">
+                            <svg viewBox="0 0 100 100" width="80" height="80">
+                                <circle cx="50" cy="50" r="42" stroke="#e5e7eb" stroke-width="6" fill="none"/>
+                                <circle cx="50" cy="50" r="42" stroke="#E8612D" stroke-width="6" fill="none" stroke-dasharray="264" stroke-dashoffset="40" stroke-linecap="round" class="ring-progress"/>
+                            </svg>
+                            <span class="ring-label">85%</span>
+                        </div>
+                    </div>
+                    <h3 data-en="Compliance Events" data-he="אירועי ציות">Compliance Events</h3>
+                    <p data-en="Automated workflow tracking with status indicators — Not Started, At Risk, Delayed, In Process, Completed." data-he="מעקב תהליכי עבודה אוטומטי עם מדדי סטטוס — לא התחיל, בסיכון, בעיכוב, בתהליך, הושלם.">Automated workflow tracking with status indicators — Not Started, At Risk, Delayed, In Process, Completed.</p>
+                    <div class="cc-status-pills">
+                        <span class="pill pill-green" data-en="Completed" data-he="הושלם">Completed</span>
+                        <span class="pill pill-orange" data-en="In Process" data-he="בתהליך">In Process</span>
+                        <span class="pill pill-red" data-en="At Risk" data-he="בסיכון">At Risk</span>
+                    </div>
+                </div>
+                <div class="compliance-card reveal" data-delay="150">
+                    <div class="cc-icon">
+                        <svg viewBox="0 0 64 64" fill="none" width="64" height="64">
+                            <rect x="8" y="8" width="48" height="48" rx="8" stroke="#E8612D" stroke-width="2"/>
+                            <path d="M20 32l8 8 16-16" stroke="#E8612D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Country & Entity Policies" data-he="מדיניות מדינה וישות">Country & Entity Policies</h3>
+                    <p data-en="Three-tier policy management — entity-specific, country-specific, and state-specific regulatory requirements with deadline tracking." data-he="ניהול מדיניות תלת-שכבתי — דרישות רגולטוריות ספציפיות לישות, למדינה ולמדינה עם מעקב מועדים.">Three-tier policy management — entity-specific, country-specific, and state-specific regulatory requirements with deadline tracking.</p>
+                    <div class="cc-tiers">
+                        <div class="tier"><span class="tier-dot"></span><span data-en="Entity" data-he="ישות">Entity</span></div>
+                        <div class="tier"><span class="tier-dot"></span><span data-en="Country" data-he="מדינה">Country</span></div>
+                        <div class="tier"><span class="tier-dot"></span><span data-en="State" data-he="מדינה">State</span></div>
+                    </div>
+                </div>
+                <div class="compliance-card reveal" data-delay="300">
+                    <div class="cc-icon">
+                        <svg viewBox="0 0 64 64" fill="none" width="64" height="64">
+                            <path d="M16 16h32v36H16z" stroke="#E8612D" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 8v8M40 8v8M16 28h32" stroke="#E8612D" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="26" cy="38" r="3" fill="#E8612D"/>
+                            <circle cx="38" cy="38" r="3" stroke="#E8612D" stroke-width="2"/>
+                            <circle cx="26" cy="46" r="3" stroke="#E8612D" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Deadline Management" data-he="ניהול מועדים">Deadline Management</h3>
+                    <p data-en="Never miss a regulatory filing. Configurable deadline conditions, risk-level indicators, and automated reminders for every compliance milestone." data-he="אל תפספסו הגשה רגולטורית. תנאי מועדים הניתנים להגדרה, מדדי רמת סיכון ותזכורות אוטומטיות לכל אבן דרך של ציות.">Never miss a regulatory filing. Configurable deadline conditions, risk-level indicators, and automated reminders for every compliance milestone.</p>
+                    <div class="cc-deadlines">
+                        <div class="deadline-item">
+                            <span class="deadline-dot urgent"></span>
+                            <span data-en="Annual Filing — Dec 31" data-he="הגשה שנתית — 31 בדצמבר">Annual Filing — Dec 31</span>
+                        </div>
+                        <div class="deadline-item">
+                            <span class="deadline-dot warning"></span>
+                            <span data-en="Board Resolution — Jan 15" data-he="החלטת דירקטוריון — 15 בינואר">Board Resolution — Jan 15</span>
+                        </div>
+                        <div class="deadline-item">
+                            <span class="deadline-dot ok"></span>
+                            <span data-en="Tax Report — Mar 30" data-he="דוח מס — 30 במרץ">Tax Report — Mar 30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2 data-en="Ready to modernize your entity management?" data-he="מוכנים לחדש את ניהול הישויות שלכם?">Ready to modernize your<br>entity management?</h2>
+                <p data-en="Replace fragmented legacy systems with a unified platform built for global corporate governance." data-he="החליפו מערכות מורשת מפוצלות בפלטפורמה אחודה הבנויה לממשל תאגידי גלובלי.">Replace fragmented legacy systems with a unified platform<br>built for global corporate governance.</p>
+                <div class="cta-actions">
+                    <a href="mailto:info@entitylink.com" class="btn btn-primary btn-lg" data-en="Request a Demo" data-he="בקשו הדגמה">Request a Demo</a>
+                    <a href="#features" class="btn btn-ghost" data-en="Learn More" data-he="למדו עוד">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <img src="entitylink_logo2.svg" alt="EntityLink" class="logo-img footer-logo-img">
+                    </div>
+                    <p data-en="Enterprise Legal Entity Management Platform" data-he="פלטפורמת ניהול ישויות משפטיות ארגונית">Enterprise Legal Entity Management Platform</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-en="Platform" data-he="פלטפורמה">Platform</h4>
+                        <a href="#features" data-en="Features" data-he="תכונות">Features</a>
+                        <a href="#tree" data-en="Org Chart" data-he="עץ ארגוני">Org Chart</a>
+                        <a href="#compliance" data-en="Compliance" data-he="ציות">Compliance</a>
+                        <a href="#management" data-en="Reports" data-he="דוחות">Reports</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-en="Company" data-he="חברה">Company</h4>
+                        <a href="#" data-en="About" data-he="אודות">About</a>
+                        <a href="#contact" data-en="Contact" data-he="צור קשר">Contact</a>
+                        <a href="#" data-en="Privacy Policy" data-he="מדיניות פרטיות">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EntityLink. <span data-en="All rights reserved." data-he="כל הזכויות שמורות.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#features" data-en="Features" data-he="תכונות">Features</a>
+            <a href="#tree" data-en="Org Chart" data-he="עץ ארגוני">Org Chart</a>
+            <a href="#management" data-en="Management" data-he="ניהול">Management</a>
+            <a href="#compliance" data-en="Compliance" data-he="ציות">Compliance</a>
+            <a href="#contact" class="btn btn-primary" data-en="Get Started" data-he="התחילו עכשיו">Get Started</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
