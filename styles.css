@@ -1578,8 +1578,9 @@ img { max-width: 100%; display: block; }
     .oc-glow { display: none; }
     .org-level { gap: 8px; flex-wrap: wrap; justify-content: center; }
     .org-level.level-0 { margin-bottom: 24px; }
-    .org-level.level-1 { margin-bottom: 28px; }
-    .org-node { min-width: 110px; max-width: 130px; }
+    .org-level.level-1 { margin-bottom: 0; }
+    .org-level.level-2 { display: none; }
+    .org-node { min-width: 110px; max-width: 140px; }
     .org-node.small { min-width: 90px; max-width: 110px; }
     .node-body { padding: 12px 10px; gap: 8px; }
     .node-badge { display: none; }
@@ -1593,9 +1594,8 @@ img { max-width: 100%; display: block; }
     .archive-topbar { padding: 10px 16px; }
     .oc-filter-pill { padding: 8px 14px; font-size: 0.82rem; min-height: 36px; }
     .archive-body { flex-direction: column; }
-    .archive-panel { width: 100%; border-right: none; border-bottom: 1px solid var(--gray-200); padding: 12px; }
-    .at-row { padding: 10px 8px; min-height: 44px; font-size: 0.875rem; }
-    .at-count { font-size: 0.75rem; }
+    .archive-panel { display: none; }
+    .archive-detail { border-top: none; }
     .archive-detail-header { padding: 12px 16px; }
     .archive-create-btn { min-height: 44px; padding: 8px 16px; font-size: 0.82rem; }
     .archive-table-head { padding: 10px 16px; font-size: 0.78rem; }
@@ -1604,7 +1604,6 @@ img { max-width: 100%; display: block; }
 
     /* --- Entity Management --- */
     .mgmt-layout { gap: 36px; }
-    .mgmt-visual { order: -1; }
     .mgmt-feature { gap: 12px; min-height: 44px; }
     .mgmt-feature strong { font-size: 0.9rem; }
     .mgmt-feature p { font-size: 0.85rem; line-height: 1.55; }
@@ -1688,13 +1687,11 @@ img { max-width: 100%; display: block; }
     .feature-icon svg { width: 24px; height: 24px; }
 
     /* --- Org Chart --- */
-    .oc-canvas { padding: 24px 8px 20px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .org-chart-inner { min-width: 500px; }
+    .oc-canvas { padding: 24px 8px 20px; }
     .org-node { min-width: 80px; max-width: 100px; }
-    .org-node.small { min-width: 68px; max-width: 85px; }
-    .node-body { padding: 8px 6px; gap: 5px; }
-    .node-name { font-size: 0.72rem; }
-    .root-node { min-width: 120px; max-width: 150px; }
+    .node-body { padding: 10px 8px; gap: 5px; }
+    .node-name { font-size: 0.75rem; }
+    .root-node { min-width: 130px; max-width: 160px; }
     .org-legend { display: none; }
 
     /* --- Document Archive --- */
